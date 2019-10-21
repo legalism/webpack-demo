@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<%= htmlWebpackPlugin.options.date %>
+<% for (var key in htmlWebpackPlugin){ %>
+<%= key %> : <%= JSON.stringify(htmlWebpackPlugin[key]) %>
+<% } %>
+</body>
+</html>
